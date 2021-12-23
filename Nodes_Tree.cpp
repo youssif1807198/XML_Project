@@ -45,23 +45,6 @@ Nodes_Tree::Nodes_Tree() {
 		return LOC_Node->index;
 	}
 
-	int Nodes_Tree::Get_Repeated_Tags_Int(Node * LOC_Node)
-	{
-		return LOC_Node->Repeated_Tags;
-	}
-
-	void Nodes_Tree::Set_Repeated_Tags_Int(Node * LOC_Node, int repeated_levels)
-	{
-		LOC_Node->Repeated_Tags = repeated_levels;
-	}
-
-	void Nodes_Tree::Add_Parent_Void(Node * Copy_Node, Node * Copy_Parent)
-	{
-		Copy_Node->parent = Copy_Parent;
-	}
-
-
-
 	void Nodes_Tree::add_level_Void(Node * LOC_Node, int LOC_level)
 	{
 		LOC_Node->level = LOC_level;
