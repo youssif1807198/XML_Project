@@ -5,7 +5,6 @@
 #include<vector>
 
 
-
 using namespace std;
 class Node
 {
@@ -14,7 +13,6 @@ public:
 	string Tag_value;
 	vector < Node * > children;
 	Node * parent;
-	int Repeated_Tags;
 	int level;
 	int index;
 public:
@@ -30,10 +28,10 @@ public:
 class Nodes_Tree
 {
 
+		Node* root;
 
 public:
 	
-		Node* root;
 
 
 
@@ -48,10 +46,6 @@ public:
 	void Set_Data_Void(Node * LOC_Node, string LOC_Data);
 	void add_level_Void(Node * LOC_Node, int LOC_level);
 	int Get_Index_Int(Node * LOC_Node);
-	int Get_Repeated_Tags_Int(Node * LOC_Node);
-	void Set_Repeated_Tags_Int(Node * LOC_Node,int repeated_levels);
-	void Add_Parent_Void(Node * Copy_Node,Node *Copy_Parent);
-
 	
 
 
